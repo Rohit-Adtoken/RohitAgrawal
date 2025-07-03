@@ -1,9 +1,30 @@
-function App() {
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './Components/Skills';
+import Projects from './Components/Projects';
+import Contact from './Components/Contact';
+import Footer from './Components/Contact';
+import ExperienceEducation from './Components/ExperienceEducation';
+import './index.css';
+
+const App = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-      <h1 className="text-4xl bg-red-200 font-bold">🚀 Tailwind with Vite is Ready!</h1>
-    </div>
+    <>
+      <div className="dark:bg-gray-900 transition-colors duration-300">
+        <Navbar />
+      
+      <Hero />
+      <About />
+      <Skills />
+      <ExperienceEducation />
+      <Projects />
+      <Contact />
+       <Footer /> 
+      </div>
+    </>
   );
-}
+};
 
 export default App;
