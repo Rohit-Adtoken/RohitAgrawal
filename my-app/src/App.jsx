@@ -5,7 +5,7 @@ import About from './components/About';
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
-import Footer from './Components/Contact';
+import Footer from './Components/Footer';
 import ExperienceEducation from './Components/ExperienceEducation';
 import './index.css';
 

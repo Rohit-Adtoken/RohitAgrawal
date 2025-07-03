@@ -1,11 +1,21 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+// tailwind.config.js
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        scrollGrid: 'gridMove 10s linear infinite',
+      },
+      keyframes: {
+        gridMove: {
+          '0%': { backgroundPosition: '0 0' },
+          '100%': { backgroundPosition: '100px 100px' },
+        },
+      },
+    },
   },
   plugins: [],
-};
+}
