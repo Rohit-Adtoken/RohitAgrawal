@@ -42,10 +42,10 @@ const About = () => {
     const animateStats = () => {
       let count = 0;
       const interval = setInterval(() => {
-        if (count <= 3) setYearsExp(count);
-        if (count <= 50) setProjects(count);
+        if (count <= 1) setYearsExp(count);
+        if (count <= 10) setProjects(count);
         if (count <= 30) setClients(count);
-        if (count <= 15) setAwards(count);
+        if (count <= 5) setAwards(count);
         
         count++;
         if (count > 50) clearInterval(interval);
@@ -218,8 +218,8 @@ const About = () => {
                   <span>Ethereum, Polygon, Binance Smart Chain</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-white rounded-full mr=2"></div>
-                  <span>Web3.js, Ethers.js, Hardhat</span>
+                  <div className="w-2 h-2 bg-white rounded-full mr-2"></div>
+                  <span> Web3.js, Ethers.js, Hardhat</span>
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-white rounded-full mr-2"></div>

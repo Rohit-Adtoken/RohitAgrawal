@@ -42,20 +42,58 @@ const Footer = () => {
 
         {/* Social Icons */}
         <div className="flex justify-center gap-6 text-xl text-gray-600 dark:text-gray-400 mb-6">
-          {[FaGithub, FaLinkedinIn, FaTwitter, FaInstagram, FaDribbble].map((Icon, index) => (
             <motion.a
-              key={index}
-              href="#"
-              whileHover={{ scale: 1.2 }}
-              transition={{ type: 'spring', stiffness: 300 }}
-              className="hover:text-indigo-500 dark:hover:text-indigo-400 transition"
+                href="https://github.com/RohitAgrawal7"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.2 }}
+                transition={{ type: 'spring', stiffness: 300 }}
+                className="hover:text-indigo-500 dark:hover:text-indigo-400 transition"
+                aria-label="GitHub"
             >
-              <Icon />
+                <FaGithub />
             </motion.a>
-          ))}
+            <motion.a
+                href="https://www.linkedin.com/in/rohit-agrawal7"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.2 }}
+                transition={{ type: 'spring', stiffness: 300 }}
+                className="hover:text-indigo-500 dark:hover:text-indigo-400 transition"
+                aria-label="LinkedIn"
+            >
+                <FaLinkedinIn />
+            </motion.a>
+            <motion.a
+                href="https://x.com/RohitAg96994818?t=BucXMIfsiObI-PSdfP2-bA&s=08"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.2 }}
+                transition={{ type: 'spring', stiffness: 300 }}
+                className="hover:text-indigo-500 dark:hover:text-indigo-400 transition"
+                aria-label="Twitter"
+            >
+                <FaTwitter />
+            </motion.a>
+            {/* <motion.a
+                href="#"
+                whileHover={{ scale: 1.2 }}
+                transition={{ type: 'spring', stiffness: 300 }}
+                className="hover:text-indigo-500 dark:hover:text-indigo-400 transition"
+                aria-label="Instagram"
+            >
+                <FaInstagram />
+            </motion.a>
+            <motion.a
+                href="#"
+                whileHover={{ scale: 1.2 }}
+                transition={{ type: 'spring', stiffness: 300 }}
+                className="hover:text-indigo-500 dark:hover:text-indigo-400 transition"
+                aria-label="Dribbble"
+            >
+                <FaDribbble />
+            </motion.a> */}
         </div>
-
-        {/* Copyright */}
         <p className="text-sm text-gray-500 dark:text-gray-500">
           © {new Date().getFullYear()} Rohit Agrawal. All rights reserved.
         </p>
